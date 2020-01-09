@@ -1,0 +1,251 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+// .tree-view {
+//     background-color: whitesmoke;
+// }
+
+// Atom styles
+atom-text-editor {
+    //color: white;
+    color: #c5c8c6;
+    //background-color: #242424;
+    background-color: rgb(30, 30, 30);
+}
+
+atom-text-editor .gutter {
+    background-color: rgb(35, 35, 35);
+    color: rgb(150, 150, 150);
+}
+
+atom-text-editor .cursor, atom-text-editor.editor .cursor {
+    /* Sets the cursor to pulse instead of blink
+    Causes a weird side effect though */
+    //transition: opacity 0.5s !important;
+
+    /* Sets the cursor to not blink */
+    // opacity: 1 !important;
+
+    border-color: rgb(255, 199, 74);
+    border-width: 1px;
+}
+
+atom-text-editor.editor .bracket-matcher .region {
+    // border-bottom: 1px solid #fff;
+    position: absolute;
+
+    // Makes a translucent box around brackets
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px dotted rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    // Adds a striped pattern to the box
+    // background: repeating-linear-gradient(
+    //     45deg,
+    //     rgba(255, 255, 255, 0.5),
+    //     rgba(255, 255, 255, 0.5) 1px,
+    //     rgba(255, 255, 255, 0) 1px,
+    //     rgba(255, 255, 255, 0) 4px);
+}
+
+.tab-bar .tab.active[data-type$="Editor"] {
+    background-color: rgb(30, 30, 30);
+}
+
+.tree-view {
+    //background-color: whitesmoke !important;
+}
+
+.btn.btn-success {
+    //color: #c5c8c6;
+    //background: #8BC34A;
+}
+
+.status-bar {
+    font-size: 0.85em;
+}
+
+.vertical-scrollbar{
+    //background: #8BC34A;
+}
+
+// Python styles
+atom-text-editor.editor {
+    opacity: 1 !important;
+    // color: white !important;
+}
+
+atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--double,
+atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--double .syntax--string,
+atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--single,
+atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--single .syntax--string,
+atom-text-editor.editor span.syntax--string.syntax--quoted {
+    color: #abd7ff;
+}
+
+atom-text-editor.editor span.syntax--keyword.syntax--operator.syntax--logical {
+    color: #9d8cff;
+}
+
+atom-text-editor.editor span.syntax--variable.syntax--language,
+atom-text-editor.editor span.syntax--variable.syntax--parameter {
+    color: #FBB16B;
+}
+
+atom-text-editor.editor span.syntax--storage.syntax--type.syntax--function,
+atom-text-editor.editor span.syntax--storage.syntax--type.syntax--class {
+    color: #fbf6a7;
+}
+
+atom-text-editor.editor span.syntax--constant.syntax--language {
+    color: #35F935;
+}
+
+atom-text-editor.editor span.syntax--support.syntax--function.syntax--builtin,
+atom-text-editor.editor span.syntax--keyword.syntax--control {
+    color: #ff7c00;
+}
+
+atom-text-editor.editor span.syntax--support.syntax--exception.syntax--python,
+atom-text-editor.editor span.syntax--keyword.syntax--control.syntax--exception.syntax--python {
+    color: #ff5454;
+}
+
+atom-text-editor.editor span.syntax--keyword.syntax--other.syntax--python {
+    color: #7ACBF3;
+}
+
+atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.syntax--python {
+    color: #166acc;
+}
+
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--function {
+    color: #0B9FE8;
+}
+
+atom-text-editor.editor span.syntax--constant.syntax--other.syntax--object.syntax--python {
+    color: rgb(10, 204, 123);
+    border-bottom: 1px solid rgba(10, 204, 123, .3);
+}
+
+atom-text-editor.editor span.syntax--constant.syntax--other.syntax--property.syntax--python {
+    color: #99CC99;
+}
+
+atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.syntax--property {
+    color: #00accb;
+}
+
+// MEL styles
+atom-text-editor.editor span.syntax--variable.syntax--other.syntax--mel {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+atom-text-editor.editor span.syntax--variable.syntax--other.syntax--mel,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--variable.syntax--mel {
+    //color: #ececec;
+    //color: #c5c8c6;
+    color: #6fd9d9;
+}
+
+// HTML / CSS Styles
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--html,
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--html,
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--tag.syntax--structure.syntax--html,
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--tag.syntax--style.syntax--html,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--tag.syntax--html,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html {
+    color: #0acc7b;
+}
+
+atom-text-editor.editor span.syntax--support.syntax--type.syntax--property-name.syntax--css {
+    color: #6bf1b9;
+}
+
+atom-text-editor.editor span.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css {
+    color: #ffbefe;
+}
+
+// Notification Styles
+// atom-notification.warning {
+//   width: 32px;
+//   height: 32px;
+// }
+//
+// atom-notification.warning:hover {
+//   width: auto;
+//   height: auto;
+// }
+
+#linter-tooltip linter-message.warning {
+    //color: rgba(255, 255, 255, .8);
+    color: rgba(0, 0, 0, .8);
+    //border: 1px solid rgba(255, 191, 0, 0.9);
+    border-left: 8px solid #FFCA28;
+    border-radius: 0px 10px 10px 10px;
+    background-color: rgba(255, 191, 0, 0.9);
+    //background-color: rgba(25, 25, 25, .9);
+}
+
+#linter-tooltip linter-message.error {
+    color: rgba(255, 255, 255, .8);
+    //border: 1px solid rgba(193, 41, 39, 0.9);
+    border-left: 8px solid #EF5350;
+    border-radius: 0px 10px 10px 10px;
+    background-color: rgba(193, 41, 39, 0.9);
+    //background-color: rgba(25, 25, 25, .9);
+}
+
+atom-text-editor.editor .linter-highlight.linter-warning,
+.linter-highlight.linter-warning {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 191, 0, 1.0) 1%,
+        rgba(255, 191, 0, 1.0) 10%,
+        rgba(255, 191, 0, 0.0) 11%,
+        rgba(255, 191, 0, 0.0) 20%
+    );
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
+atom-text-editor.editor .linter-highlight.linter-error,
+.linter-highlight.linter-error {
+    background-image: linear-gradient(
+        90deg,
+        rgba(193, 41, 39, 1.0) 1%,
+        rgba(193, 41, 39, 1.0) 10%,
+        rgba(193, 41, 39, 0.0) 11%,
+        rgba(193, 41, 39, 0.0) 20%
+    );
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
+// Icons
+/*
+.icon[data-name$=".ma"]:before{
+    font-family: Devicons;
+    content: "\E64E";
+}
+*/
