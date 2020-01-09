@@ -195,38 +195,28 @@ atom-text-editor.editor span.syntax--entity.syntax--other.syntax--attribute-name
 //   height: auto;
 // }
 
-#linter-tooltip linter-message.warning {
-    //color: rgba(255, 255, 255, .8);
-    color: rgba(0, 0, 0, .8);
-    //border: 1px solid rgba(255, 191, 0, 0.9);
-    border-left: 8px solid #FFCA28;
-    border-radius: 0px 10px 10px 10px;
-    background-color: rgba(255, 191, 0, 0.9);
-    //background-color: rgba(25, 25, 25, .9);
+#linter-tooltip linter-message.error:first-child {
+    border-top: 1px dotted rgba(193, 41, 39, 0.9);
+}
+
+#linter-tooltip linter-message.error:last-child {
+    border-bottom: 1px dotted rgba(193, 41, 39, 0.9);
+}
+
+#linter-tooltip linter-message.error:last-child::before {
+    border-color:
+        // transparent rgba(193, 41, 39, 0.9) rgba(193, 41, 39, 0.9) transparent;
+        transparent transparent rgba(193, 41, 39, 0.9) transparent;
+    border-width: 5px;
+    margin-left: 5px;
+    margin-top: -2px;
 }
 
 #linter-tooltip linter-message.error {
     color: rgba(255, 255, 255, .8);
-    //border: 1px solid rgba(193, 41, 39, 0.9);
-    border-left: 8px solid #EF5350;
-    border-radius: 0px 10px 10px 10px;
-    background-color: rgba(193, 41, 39, 0.9);
-    //background-color: rgba(25, 25, 25, .9);
-}
-
-atom-text-editor.editor .linter-highlight.linter-warning,
-.linter-highlight.linter-warning,
-.tree-view .linter-warning{
-    background: linear-gradient(
-        90deg,
-        rgba(255, 191, 0, 1.0) 1%,
-        rgba(255, 191, 0, 1.0) 10%,
-        rgba(255, 191, 0, 0.0) 11%,
-        rgba(255, 191, 0, 0.0) 20%
-    );
-    background-size: 5px 1px;
-    background-repeat: repeat-x;
-    background-position: left bottom;
+    border: 1px dotted rgba(193, 41, 39, 0.9);
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(40, 10, 10, 0.9);
 }
 
 atom-text-editor.editor .linter-highlight.linter-error,
@@ -238,6 +228,45 @@ atom-text-editor.editor .linter-highlight.linter-error,
         rgba(193, 41, 39, 1.0) 10%,
         rgba(193, 41, 39, 0.0) 11%,
         rgba(193, 41, 39, 0.0) 20%
+    );
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
+#linter-tooltip linter-message.warning:first-child {
+    border-top: 1px dotted rgba(255, 191, 0, 0.9);
+}
+
+#linter-tooltip linter-message.warning:last-child {
+    border-bottom: 1px dotted rgba(255, 191, 0, 0.9);
+}
+
+#linter-tooltip linter-message.warning:last-child::before {
+    border-color:
+        // transparent rgba(255, 191, 0, 0.9) rgba(255, 191, 0, 0.9) transparent;
+        transparent transparent rgba(255, 191, 0, 0.9) transparent;
+    border-width: 5px;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+#linter-tooltip linter-message.warning {
+    color: rgba(255, 255, 255, .8);
+    border: 1px dotted rgba(255, 191, 0, 0.9);
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(87, 70, 21, 0.9);
+}
+
+atom-text-editor.editor .linter-highlight.linter-warning,
+.linter-highlight.linter-warning,
+.tree-view .linter-warning {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 191, 0, 1.0) 1%,
+        rgba(255, 191, 0, 1.0) 10%,
+        rgba(255, 191, 0, 0.0) 11%,
+        rgba(255, 191, 0, 0.0) 20%
     );
     background-size: 5px 1px;
     background-repeat: repeat-x;
