@@ -277,6 +277,45 @@ atom-text-editor.editor .linter-highlight.linter-warning,
     background-position: left bottom;
 }
 
+#linter-tooltip linter-message.info:first-child {
+    border-top: 1px dotted rgba(100, 148, 237, 0.9);
+}
+
+#linter-tooltip linter-message.info:last-child {
+    border-bottom: 1px dotted rgba(100, 148, 237, 0.9);
+}
+
+#linter-tooltip linter-message.info:last-child::before {
+    border-color:
+        // transparent rgba(100, 148, 237, 0.9) rgba(100, 148, 237, 0.9) transparent;
+        transparent transparent rgba(100, 148, 237, 0.9) transparent;
+    border-width: 5px;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+#linter-tooltip linter-message.info {
+    color: rgba(255, 255, 255, .8);
+    border: 1px dotted rgba(100, 148, 237, 0.9);
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(25, 42, 73, 0.9);
+}
+
+atom-text-editor.editor .linter-highlight.linter-info,
+.linter-highlight.linter-info,
+.tree-view .linter-info {
+    background: linear-gradient(
+        90deg,
+        rgba(100, 148, 237, 1.0) 1%,
+        rgba(100, 148, 237, 1.0) 10%,
+        rgba(255, 191, 0, 0.0) 11%,
+        rgba(255, 191, 0, 0.0) 20%
+    );
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
 // Icons
 /*
 .icon[data-name$=".ma"]:before{
