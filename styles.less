@@ -199,6 +199,10 @@ atom-text-editor atom-text-editor-minimap .minimap-scroll-indicator, html atom-t
 //   height: auto;
 // }
 
+#linter-tooltip linter-message.error::before {
+    opacity: 1;
+}
+
 #linter-tooltip linter-message.error:first-child {
     border-top: 1px dotted rgba(193, 41, 39, 0.9);
 }
@@ -238,6 +242,10 @@ atom-text-editor.editor .linter-highlight.linter-error,
     background-position: left bottom;
 }
 
+#linter-tooltip linter-message.warning::before {
+    opacity: 1;
+}
+
 #linter-tooltip linter-message.warning:first-child {
     border-top: 1px dotted rgba(255, 191, 0, 0.9);
 }
@@ -275,6 +283,10 @@ atom-text-editor.editor .linter-highlight.linter-warning,
     background-size: 5px 1px;
     background-repeat: repeat-x;
     background-position: left bottom;
+}
+
+#linter-tooltip linter-message.info::before {
+    opacity: 1;
 }
 
 #linter-tooltip linter-message.info:first-child {
