@@ -2,7 +2,7 @@
 My personal Atom Data.
 
 ## Stylesheet ##
-My personal atom stylesheet.
+My personal atom stylesheet.  
 :warning:Designed to be used with the **Pristine** UI Theme and the **Atom Dark** Syntax Theme.
 
 ## Themes ##
