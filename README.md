@@ -62,7 +62,7 @@ My personal atom stylesheet.
 -   metrics
 
 ## Package Settings ##
-### linter-pylama ###:
+### linter-pylama ###
 -   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
 
 ### atom-ide-ui ###
