@@ -3,10 +3,11 @@ My personal Atom Data.
 
 ## Stylesheet ##
 My personal atom stylesheet.  
-:warning:Designed to be used with the **Pristine** UI Theme and the **Atom Dark** Syntax Theme.
+:warning:Designed to be used with the **Pristine** or **Atom Material** UI Themes and the **Atom Dark** Syntax Theme.
 
 ## Themes ##
 ### UI ###
+-   Atom Material
 -   Pristine (pristine-ui)
 
 ### Syntax ###
@@ -15,26 +16,21 @@ My personal atom stylesheet.
 ## Packages ##
 -   activate-power-mode
 -   advanced-open-file
--   atom-beautify
--   atom-html-preview
 -   atom-ide-debugger-python
 -   atom-ide-ui 
 -   autoclose-html
 -   autocomplete-bash-builtins
 -   autocomplete-python
 -   busy-signal
--   code-peek
 -   color-picker
 -   docblock-python 
 -   expose
 -   file-icons
 -   fonts
--   git-time-machine
 -   hey-pane
 -   highlight-selected
 -   hydrogen
 -   intentions
--   language-mel 
 -   linter
 -   linter-flake8
 -   linter-js-yaml
@@ -59,12 +55,8 @@ My personal atom stylesheet.
 -   script
 -   sort-lines
 -   split-diff
--   svg-preview
--   sublime-style-column-selection 
 -   todo-show
 
 ## Disable ##
--   language-ruby
--   language-ruby-on-rails
 -   markdown-preview
 -   metrics
