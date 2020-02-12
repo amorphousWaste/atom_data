@@ -9,36 +9,11 @@
  * http://lesscss.org
  */
 
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-// .tree-view {
-//     background-color: whitesmoke;
-// }
-
-// Atom styles
-atom-text-editor {
-    //color: white;
-    color: #c5c8c6;
-    //background-color: #242424;
-    background-color: rgb(30, 30, 30);
-}
-
-atom-text-editor .gutter {
-    background-color: rgb(35, 35, 35);
-    color: rgb(150, 150, 150);
-}
-
 atom-text-editor .cursor, atom-text-editor.editor .cursor {
-    /* Sets the cursor to pulse instead of blink
-    Causes a weird side effect though */
-    //transition: opacity 0.5s !important;
-
-    /* Sets the cursor to not blink */
+    /* Sets the cursor to pulse instead of blink.
+    This used to cause a weird side effect, but that seems fixed. */
+    transition: opacity 0.5s !important;
+    // Sets the cursor to not blink
     // opacity: 1 !important;
 
     border-color: rgb(255, 199, 74);
@@ -46,7 +21,6 @@ atom-text-editor .cursor, atom-text-editor.editor .cursor {
 }
 
 atom-text-editor.editor .bracket-matcher .region {
-    // border-bottom: 1px solid #fff;
     position: absolute;
 
     // Makes a translucent box around brackets
@@ -56,42 +30,32 @@ atom-text-editor.editor .bracket-matcher .region {
     border-bottom: 1px dotted rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    // Adds a striped pattern to the box
-    // background: repeating-linear-gradient(
-    //     45deg,
-    //     rgba(255, 255, 255, 0.5),
-    //     rgba(255, 255, 255, 0.5) 1px,
-    //     rgba(255, 255, 255, 0) 1px,
-    //     rgba(255, 255, 255, 0) 4px);
 }
 
 .tab-bar .tab.active[data-type$="Editor"] {
     background-color: rgb(30, 30, 30);
 }
 
-.tree-view {
-    //background-color: whitesmoke !important;
+/* While this should work for everything, this block is for the Material UI
+theme */
+.list-group li:not(.list-nested-item),
+.list-tree li:not(.list-nested-item),
+.list-group li.list-nested-item > .list-item,
+.list-tree li.list-nested-item > .list-item {
+    line-height: 20px;
 }
 
-.btn.btn-success {
-    //color: #c5c8c6;
-    //background: #8BC34A;
+.list-group .selected::before,
+.list-tree .selected::before {
+    height: 20px;
 }
+// End Material UI block
 
 .status-bar {
     font-size: 0.85em;
 }
 
-.vertical-scrollbar{
-    //background: #8BC34A;
-}
-
 // Python styles
-atom-text-editor.editor {
-    opacity: 1 !important;
-    // color: white !important;
-}
-
 atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--double,
 atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--double .syntax--string,
 atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--single,
@@ -160,8 +124,6 @@ atom-text-editor.editor span.syntax--variable.syntax--other.syntax--mel {
 
 atom-text-editor.editor span.syntax--variable.syntax--other.syntax--mel,
 atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--variable.syntax--mel {
-    //color: #ececec;
-    //color: #c5c8c6;
     color: #6fd9d9;
 }
 
@@ -188,21 +150,6 @@ atom-text-editor atom-text-editor-minimap .minimap-scroll-indicator, html atom-t
     z-index: 1;
 }
 
-// Notification Styles
-// atom-notification.warning {
-//   width: 32px;
-//   height: 32px;
-// }
-//
-// atom-notification.warning:hover {
-//   width: auto;
-//   height: auto;
-// }
-
-#linter-tooltip linter-message.error::before {
-    opacity: 1;
-}
-
 #linter-tooltip linter-message.error:first-child {
     border-top: 1px dotted rgba(193, 41, 39, 0.9);
 }
@@ -213,7 +160,6 @@ atom-text-editor atom-text-editor-minimap .minimap-scroll-indicator, html atom-t
 
 #linter-tooltip linter-message.error:last-child::before {
     border-color:
-        // transparent rgba(193, 41, 39, 0.9) rgba(193, 41, 39, 0.9) transparent;
         transparent transparent rgba(193, 41, 39, 0.9) transparent;
     border-width: 5px;
     margin-left: 5px;
@@ -242,10 +188,6 @@ atom-text-editor.editor .linter-highlight.linter-error,
     background-position: left bottom;
 }
 
-#linter-tooltip linter-message.warning::before {
-    opacity: 1;
-}
-
 #linter-tooltip linter-message.warning:first-child {
     border-top: 1px dotted rgba(255, 191, 0, 0.9);
 }
@@ -256,7 +198,6 @@ atom-text-editor.editor .linter-highlight.linter-error,
 
 #linter-tooltip linter-message.warning:last-child::before {
     border-color:
-        // transparent rgba(255, 191, 0, 0.9) rgba(255, 191, 0, 0.9) transparent;
         transparent transparent rgba(255, 191, 0, 0.9) transparent;
     border-width: 5px;
     margin-left: 5px;
@@ -284,54 +225,3 @@ atom-text-editor.editor .linter-highlight.linter-warning,
     background-repeat: repeat-x;
     background-position: left bottom;
 }
-
-#linter-tooltip linter-message.info::before {
-    opacity: 1;
-}
-
-#linter-tooltip linter-message.info:first-child {
-    border-top: 1px dotted rgba(100, 148, 237, 0.9);
-}
-
-#linter-tooltip linter-message.info:last-child {
-    border-bottom: 1px dotted rgba(100, 148, 237, 0.9);
-}
-
-#linter-tooltip linter-message.info:last-child::before {
-    border-color:
-        // transparent rgba(100, 148, 237, 0.9) rgba(100, 148, 237, 0.9) transparent;
-        transparent transparent rgba(100, 148, 237, 0.9) transparent;
-    border-width: 5px;
-    margin-left: 5px;
-    margin-top: -2px;
-}
-
-#linter-tooltip linter-message.info {
-    color: rgba(255, 255, 255, .8);
-    border: 1px dotted rgba(100, 148, 237, 0.9);
-    border-radius: 10px 10px 10px 10px;
-    background-color: rgba(25, 42, 73, 0.9);
-}
-
-atom-text-editor.editor .linter-highlight.linter-info,
-.linter-highlight.linter-info,
-.tree-view .linter-info {
-    background: linear-gradient(
-        90deg,
-        rgba(100, 148, 237, 1.0) 1%,
-        rgba(100, 148, 237, 1.0) 10%,
-        rgba(255, 191, 0, 0.0) 11%,
-        rgba(255, 191, 0, 0.0) 20%
-    );
-    background-size: 5px 1px;
-    background-repeat: repeat-x;
-    background-position: left bottom;
-}
-
-// Icons
-/*
-.icon[data-name$=".ma"]:before{
-    font-family: Devicons;
-    content: "\E64E";
-}
-*/
