@@ -55,12 +55,16 @@ atom-text-editor.editor span.syntax--keyword.syntax--operator.syntax--logical {
 
 atom-text-editor.editor span.syntax--variable.syntax--language,
 atom-text-editor.editor span.syntax--variable.syntax--parameter {
-    color: #FBB16B;
+    color: #fbb16b;
 }
 
 atom-text-editor.editor span.syntax--storage.syntax--type.syntax--function,
 atom-text-editor.editor span.syntax--storage.syntax--type.syntax--class {
     color: #fbf6a7;
+}
+
+atom-text-editor.editor span.syntax--support.syntax--function {
+    color: #b585da;
 }
 
 atom-text-editor.editor span.syntax--constant.syntax--language {
@@ -78,7 +82,7 @@ atom-text-editor.editor span.syntax--keyword.syntax--control.syntax--exception.s
 }
 
 atom-text-editor.editor span.syntax--keyword.syntax--other.syntax--python {
-    color: #7ACBF3;
+    color: #7acbf3;
 }
 
 atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.syntax--python {
@@ -86,7 +90,7 @@ atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.synta
 }
 
 atom-text-editor.editor span.syntax--entity.syntax--name.syntax--function {
-    color: #0B9FE8;
+    color: #0b9fe8;
 }
 
 atom-text-editor.editor span.syntax--constant.syntax--other.syntax--object.syntax--python {
@@ -95,11 +99,11 @@ atom-text-editor.editor span.syntax--constant.syntax--other.syntax--object.synta
 }
 
 atom-text-editor.editor span.syntax--constant.syntax--other.syntax--property.syntax--python {
-    color: #99CC99;
+    color: #99cc99;
 }
 
 atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.syntax--property {
-    color: #00accb;
+    color: #00c5e8;
 }
 
 // MEL styles
@@ -129,6 +133,10 @@ atom-text-editor.editor span.syntax--support.syntax--type.syntax--property-name.
 
 atom-text-editor.editor span.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css {
     color: #ffbefe;
+}
+
+atom-text-editor.editor span.syntax--entity.syntax--other.syntax--inherited-class{
+    color: #27b7f5;
 }
 
 atom-text-editor atom-text-editor-minimap .minimap-scroll-indicator, html atom-text-editor-minimap .minimap-scroll-indicator {
@@ -209,4 +217,15 @@ atom-text-editor.editor .linter-highlight.linter-warning,
     background-size: 5px 1px;
     background-repeat: repeat-x;
     background-position: left bottom;
+}
+
+.indent-guide-improved {
+    background-color: rgba(150, 150, 150, 0.3);
+    &.indent-guide-stack {
+        // padding-right: 2.4em;
+        background-color: rgba(74, 125, 255, 0.5);
+        &.indent-guide-active {
+            background: rgba(74, 201, 255, 0.5);
+        }
+    }
 }
