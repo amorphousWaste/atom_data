@@ -14,48 +14,49 @@ My personal atom stylesheet.
 -   Atom Dark
 
 ## Packages ##
--   activate-power-mode
--   advanced-open-file
--   atom-ide-debugger-python
--   atom-ide-ui 
--   autoclose-html
--   autocomplete-bash-builtins
--   autocomplete-python
--   busy-signal
--   color-picker
--   docblock-python 
--   expose
--   file-icons
--   fonts
--   hey-pane
--   highlight-selected
--   hydrogen
--   intentions
--   linter
--   linter-flake8
--   linter-js-yaml
--   linter-jsonlint
--   linter-markdown
--   linter-pylama
--   linter-shellcheck 
--   linter-ui-default
--   markdown-preview-enhanced 
--   minimap
--   minimap-bookmarks
--   minimap-cursorline
--   minimap-find-and-replace
--   minimap-git-diff 
--   minimap-highlight-selected
--   minimap-pigments
--   minimap-selection
--   minimap-split-diff
--   pigments
--   python-black
--   python-tools
--   script
--   sort-lines
--   split-diff
--   todo-show
+-   [x] Hydrogen
+-   [ ] activate-power-mode
+-   [x] advanced-open-file
+-   [ ] atom-beautify
+-   [x] atom-ide-debugger-python
+-   [x] atom-ide-ui
+-   [x] autoclose-html
+-   [x] autocomplete-bash-builtins
+-   [x] autocomplete-python
+-   [x] busy-signal
+-   [x] color-picker
+-   [x] file-icons
+-   [x] fonts
+-   [x] hey-pane
+-   [x] highlight-selected
+-   [x] indent-guide-improved
+-   [x] intentions
+-   [x] linter
+-   [x] linter-js-yaml
+-   [x] linter-jsonlint
+-   [x] linter-markdown
+-   [x] linter-pylama
+-   [x] linter-shellcheck
+-   [x] linter-ui-default
+-   [x] markdown-preview-enhanced
+-   [x] minimap
+-   [x] minimap-bookmarks
+-   [x] minimap-cursorline
+-   [x] minimap-find-and-replace
+-   [x] minimap-git-diff
+-   [x] minimap-highlight-selected
+-   [x] minimap-linter
+-   [x] minimap-pigments
+-   [x] minimap-selection
+-   [x] minimap-split-diff
+-   [x] pigments
+-   [x] python-black
+-   [x] python-tools
+-   [x] script
+-   [x] sort-lines
+-   [x] split-diff
+-   [x] svg-preview
+-   [x] todo-show
 
 ## Disable ##
 -   markdown-preview
@@ -67,3 +68,9 @@ My personal atom stylesheet.
 
 ### atom-ide-ui ###
 -   **Enabled Features > Enable Diagnostics**: Never enabled
+
+### python-black ###
+-   **Format on save**: ☐
+
+### markdown-preview-enhanced ###
+-   **Open preview pane automatically when opening a markdown file**: ☐
