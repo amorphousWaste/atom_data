@@ -58,9 +58,18 @@ atom-text-editor.editor span.syntax--variable.syntax--parameter {
     color: #fbb16b;
 }
 
-atom-text-editor.editor span.syntax--storage.syntax--type.syntax--function,
-atom-text-editor.editor span.syntax--storage.syntax--type.syntax--class {
+atom-text-editor.editor span.syntax--storage.syntax--type.syntax--class,
+atom-text-editor.editor span.syntax--storage.syntax--type.syntax--function {
     color: #fbf6a7;
+}
+
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--type.syntax--class {
+    color: #439c76;
+    text-decoration: underline;
+}
+
+atom-text-editor.editor span.syntax--entity.syntax--name.syntax--function {
+    color: #0b9fe8;
 }
 
 atom-text-editor.editor span.syntax--support.syntax--function {
@@ -87,10 +96,6 @@ atom-text-editor.editor span.syntax--keyword.syntax--other.syntax--python {
 
 atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.syntax--python {
     color: #166acc;
-}
-
-atom-text-editor.editor span.syntax--entity.syntax--name.syntax--function {
-    color: #0b9fe8;
 }
 
 atom-text-editor.editor span.syntax--constant.syntax--other.syntax--object.syntax--python {
