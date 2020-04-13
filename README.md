@@ -67,6 +67,9 @@ My personal atom stylesheet.
 ### atom-ide-ui ###
 -   **Enabled Features > Enable Diagnostics**: Never enabled
 
+### fonts ###
+-   **font***: Borg Sans Mono
+
 ### linter-pylama ###
 -   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
 
