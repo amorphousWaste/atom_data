@@ -3,7 +3,8 @@ My personal Atom Data.
 
 ## Stylesheet ##
 My personal atom stylesheet.  
-:warning:Designed to be used with the **Pristine** or **Atom Material** UI Themes and the **Atom Dark** Syntax Theme.
+
+Designed to be used with the **Pristine** or **Atom Material** UI Themes and the **Atom Dark** Syntax Theme.
 
 ## Themes ##
 ### UI ###
