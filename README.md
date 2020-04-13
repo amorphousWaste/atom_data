@@ -77,7 +77,7 @@ My personal atom stylesheet.
 -   **Statusbar Represents**: Current File
 
 ### markdown-preview-enhanced ###
--   **Open preview pane automatically when opening a markdown file**: ☐
+-   **Open preview pane automatically when opening a markdown file**: false
 
 ### python-black ###
--   **Format on save**: ☐
+-   **Format on save**: false
