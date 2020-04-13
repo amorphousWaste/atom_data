@@ -63,14 +63,18 @@ My personal atom stylesheet.
 -   metrics
 
 ## Package Settings ##
-### linter-pylama ###
--   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
 
 ### atom-ide-ui ###
 -   **Enabled Features > Enable Diagnostics**: Never enabled
 
-### python-black ###
--   **Format on save**: ☐
+### linter-pylama ###
+-   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
+
+### linter-ui-default ###
+-   **Statusbar Represents**: Current File
 
 ### markdown-preview-enhanced ###
 -   **Open preview pane automatically when opening a markdown file**: ☐
+
+### python-black ###
+-   **Format on save**: ☐
