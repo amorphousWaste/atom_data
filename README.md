@@ -3,7 +3,8 @@ My personal Atom Data.
 
 ## Stylesheet ##
 My personal atom stylesheet.  
-:warning:Designed to be used with the **Pristine** or **Atom Material** UI Themes and the **Atom Dark** Syntax Theme.
+
+Designed to be used with the **Pristine** or **Atom Material** UI Themes and the **Atom Dark** Syntax Theme.
 
 ## Themes ##
 ### UI ###
@@ -63,14 +64,21 @@ My personal atom stylesheet.
 -   metrics
 
 ## Package Settings ##
-### linter-pylama ###
--   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
 
 ### atom-ide-ui ###
 -   **Enabled Features > Enable Diagnostics**: Never enabled
 
-### python-black ###
--   **Format on save**: ☐
+### fonts ###
+-   **font***: Borg Sans Mono
+
+### linter-pylama ###
+-   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
+
+### linter-ui-default ###
+-   **Statusbar Represents**: Current File
 
 ### markdown-preview-enhanced ###
--   **Open preview pane automatically when opening a markdown file**: ☐
+-   **Open preview pane automatically when opening a markdown file**: false
+
+### python-black ###
+-   **Format on save**: false
