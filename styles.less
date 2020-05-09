@@ -169,7 +169,11 @@ atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--double,
 atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--double .syntax--string,
 atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--single,
 atom-text-editor.editor span.syntax--string.syntax--quoted.syntax--single .syntax--string,
-atom-text-editor.editor span.syntax--string.syntax--quoted {
+atom-text-editor.editor span.syntax--string.syntax--quoted,
+
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--python,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--python {
+    // MagicPython
     color: #abd7ff;
 }
 
@@ -177,16 +181,31 @@ atom-text-editor.editor span.syntax--keyword.syntax--operator.syntax--logical {
     color: #b585da;
 }
 
-atom-text-editor.editor span.syntax--variable.syntax--language,
-atom-text-editor.editor span.syntax--variable.syntax--parameter {
+atom-text-editor.editor span.syntax--variable.syntax--parameter.syntax--function.syntax--language.syntax--python {
     color: #fbb16b;
     font-style: italic;
+}
+
+atom-text-editor.editor span.syntax--variable.syntax--language,
+atom-text-editor.editor span.syntax--variable.syntax--parameter {
+    color: #097bb4;
 }
 
 atom-text-editor.editor span.syntax--storage.syntax--type.syntax--class,
 atom-text-editor.editor span.syntax--storage.syntax--type.syntax--function,
 atom-text-editor.editor span.syntax--support.syntax--function {
     color: #fbf6a7;
+}
+
+atom-text-editor.editor span.syntax--support.syntax--function.syntax--magic.syntax--python,
+atom-text-editor.editor span.syntax--support.syntax--variable.syntax--magic.syntax--python {
+    color: #fbf6a7;
+    font-style: italic;
+}
+
+atom-text-editor.editor span.syntax--meta.syntax--function-call.syntax--generic.syntax--python {
+    // MagicPython
+    color: #4b68be;
 }
 
 atom-text-editor.editor span.syntax--entity.syntax--name.syntax--type.syntax--class {
