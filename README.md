@@ -16,6 +16,7 @@ Designed to be used with the **Pristine** or **Atom Material** UI Themes and the
 
 ## Packages ##
 -   [x] Hydrogen
+-   [x] MagicPython
 -   [ ] activate-power-mode
 -   [x] advanced-open-file
 -   [ ] atom-beautify
@@ -60,6 +61,7 @@ Designed to be used with the **Pristine** or **Atom Material** UI Themes and the
 -   [x] todo-show
 
 ## Disable ##
+-   language-python
 -   markdown-preview
 -   metrics
 
@@ -76,6 +78,10 @@ Designed to be used with the **Pristine** or **Atom Material** UI Themes and the
 
 ### linter-ui-default ###
 -   **Statusbar Represents**: Current File
+
+### MagicPython ###
+    **Show Invisibles**: true
+        (multiple toggles)
 
 ### markdown-preview-enhanced ###
 -   **Open preview pane automatically when opening a markdown file**: false
