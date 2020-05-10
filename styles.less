@@ -189,12 +189,14 @@ atom-text-editor.editor span.syntax--variable.syntax--parameter.syntax--function
 atom-text-editor.editor span.syntax--variable.syntax--language,
 atom-text-editor.editor span.syntax--variable.syntax--parameter {
     color: #097bb4;
+    font-style: italic;
 }
 
 atom-text-editor.editor span.syntax--storage.syntax--type.syntax--class,
 atom-text-editor.editor span.syntax--storage.syntax--type.syntax--function,
 atom-text-editor.editor span.syntax--support.syntax--function {
     color: #fbf6a7;
+    // color: #33e3fb;
 }
 
 atom-text-editor.editor span.syntax--support.syntax--function.syntax--magic.syntax--python,
@@ -250,6 +252,22 @@ atom-text-editor.editor span.syntax--constant.syntax--other.syntax--property.syn
 atom-text-editor.editor span.syntax--variable.syntax--other.syntax--object.syntax--property {
     color: #00c5e8;
 }
+
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--list.syntax--begin.syntax--python,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--list.syntax--end.syntax--python,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--arguments.syntax--begin.syntax--python,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--arguments.syntax--end.syntax--python,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--dict.syntax--begin.syntax--python,
+atom-text-editor.editor span.syntax--punctuation.syntax--definition.syntax--dict.syntax--end.syntax--python {
+    // MagicPython
+    color: #999999;
+}
+
+// atom-text-editor.editor span.syntax--meta.syntax--function-call.syntax--arguments.syntax--python {
+//     // MagicPython
+//     background-color: rgba(153, 153, 153, 0.2);
+//     border-radius: 10px;
+// }
 
 // MEL styles
 atom-text-editor.editor span.syntax--variable.syntax--other.syntax--mel {
