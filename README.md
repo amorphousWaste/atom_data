@@ -74,7 +74,7 @@ Designed to be used with the **Pristine** or **Atom Material** UI Themes and the
 -   **font***: Borg Sans Mono
 
 ### linter-pylama ###
--   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413
+-   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413,E402
 
 ### linter-ui-default ###
 -   **Statusbar Represents**: Current File
