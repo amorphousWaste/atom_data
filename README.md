@@ -71,7 +71,7 @@ Designed to be used with the **Pristine** or **Atom Material** UI Themes and the
 -   **Enabled Features > Enable Diagnostics**: Never enabled
 
 ### fonts ###
--   **font***: Borg Sans Mono
+-   **font**: Borg Sans Mono
 
 ### linter-pylama ###
 -   **Ignore Errors**: D203,D212,D213,D404,D406,D407,D413,E402
@@ -80,8 +80,7 @@ Designed to be used with the **Pristine** or **Atom Material** UI Themes and the
 -   **Statusbar Represents**: Current File
 
 ### MagicPython ###
-    **Show Invisibles**: true
-        (multiple toggles)
+-    **Show Invisibles**: true (multiple toggles)
 
 ### markdown-preview-enhanced ###
 -   **Open preview pane automatically when opening a markdown file**: false
